@@ -24,17 +24,17 @@ class Auto{
     
      func cambioDeVelocidad( ) -> ( actual : Int, velocidadEnCadena: String){
         switch velocidad{
-        case Velocidades.Apagado:
-            velocidad = Velocidades.VelocidadBaja
+        case .Apagado:
+            velocidad = .VelocidadBaja
             break
-        case Velocidades.VelocidadBaja:
-            velocidad = Velocidades.VelocidadMedia
+        case .VelocidadBaja:
+            velocidad = .VelocidadMedia
             break
-        case Velocidades.VelocidadMedia:
-            velocidad = Velocidades.VelocidadAlta
+        case .VelocidadMedia:
+            velocidad = .VelocidadAlta
             break
-        case Velocidades.VelocidadAlta:
-            velocidad = Velocidades.VelocidadMedia
+        case .VelocidadAlta:
+            velocidad = .VelocidadMedia
             break
         }
         var velStr :String = "\(velocidad)"
