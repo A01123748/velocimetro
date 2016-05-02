@@ -17,8 +17,8 @@ enum Velocidades : Int{
 class Auto{
     var velocidad : Velocidades
     
-    init(velocidad : Velocidades){
-        self.velocidad = velocidad
+    init(){
+        self.velocidad = .Apagado
         print ("(\(velocidad.rawValue), \"\(velocidad)\")")
     }
     
@@ -43,7 +43,7 @@ class Auto{
     }
 }
 
-var miAuto = Auto(velocidad: Velocidades.Apagado)
+var miAuto = Auto()
 for var i in 0...19{
     print(miAuto.cambioDeVelocidad())
 }
